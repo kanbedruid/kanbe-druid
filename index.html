@@ -1,8 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>人群占比计算器</title>
     <option>*本工具完全由ChatGPT指导制作完成；</option>
+    <style>
+		#container {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 100%;
+			height: 100%;
+		}
+	</style>
 	<script>
         
 		function calculate() {
@@ -1406,6 +1417,7 @@ if ((1-percentage) * 100 >= 99.99999) {
 </script>
 </head>
 <body>
+    <div id="container">
 	<h1>人群占比计算器</h1>
 <form>
     <button type="button" onclick="toggleComment()">注释</button>
@@ -1494,5 +1506,6 @@ if ((1-percentage) * 100 >= 99.99999) {
 	
 	<p id="result"></p>
 </form>
+</div>
 </body>
 </html>
