@@ -16,154 +16,214 @@
 			
 			// 计算占比
 			var percentage = 1.0;
+            var apercentage = 1.0;
 			if (wealth != "") {
 				percentage *= wealth_percentage[wealth];
+                
 			}
 
             if (education != "") {
   if (education == "初中+") {
     if (wealth == "温饱家庭（总资产25万+）") {
       percentage *= 0.95;
+      
     } else if (wealth == "小康家庭（总资产50万+）") {
       percentage *= 0.99;
+      
     } else if (wealth == "不限") {
       percentage *= 0.67;
+      
     } else if (wealth == "中产家庭（总资产100万+）" || wealth == "高产家庭（总资产300万+）" || wealth == "富裕家庭（总资产600万+）" || wealth == "高净值家庭（总资产1000万+）" || wealth == "超高净值家庭（总资产1亿+）") {
       percentage *= 1;
+      
     }
 } else if (education == "高中/中专+") {
         if (wealth == "温饱家庭（总资产25万+）") {
             percentage *= 0.85;
+            
         } else if (wealth == "小康家庭（总资产50万+）") {
             percentage *= 0.9;
+            
         } else if (wealth == "中产家庭（总资产100万+）") {
             percentage *= 0.98;
+            
         } else if (wealth == "不限") {
       percentage *= 0.5;
+      
         } else if (wealth == "高产家庭（总资产300万+）") {
             percentage *= 0.99;
+            
         } else if (wealth == "富裕家庭（总资产600万+）" || wealth == "高净值家庭（总资产1000万+）" || wealth == "超高净值家庭（总资产1亿+）") {
             percentage *= 1;
+            
         }
   }
 else if (education == "大专+") {
         if (wealth == "温饱家庭（总资产25万+）") {
             percentage *= 0.3;
+            
         } else if (wealth == "小康家庭（总资产50万+）") {
             percentage *= 0.5;
+            
         } else if (wealth == "中产家庭（总资产100万+）") {
             percentage *= 0.75;
+            
         } else if (wealth == "不限") {
       percentage *= 0.15;
+      
         } else if (wealth == "高产家庭（总资产300万+）") {
             percentage *= 0.9;
+            
         } else if (wealth == "富裕家庭（总资产600万+）") {
             percentage *= 0.95;
+            
         } else if (wealth == "高净值家庭（总资产1000万+）" || wealth == "超高净值家庭（总资产1亿+）") {
             percentage *= 1;
+            
         }
   }
   
   else if (education == "本科+") {
         if (wealth == "温饱家庭（总资产25万+）") {
             percentage *= 0.1;
+            
         } else if (wealth == "小康家庭（总资产50万+）") {
             percentage *= 0.3;
+            
         } else if (wealth == "中产家庭（总资产100万+）") {
             percentage *= 0.5;
+            
         } else if (wealth == "不限") {
       percentage *= 0.04;
+      
         } else if (wealth == "高产家庭（总资产300万+）") {
             percentage *= 0.75;
+            
         } else if (wealth == "富裕家庭（总资产600万+）") {
             percentage *= 0.9;
+            
         } else if (wealth == "高净值家庭（总资产1000万+）") {
             percentage *= 0.95;
+            
         } else if (wealth == "超高净值家庭（总资产1亿+）") {
             percentage *= 1;
+            
         }
   }
 
   else if (education == "211本科+") {
         if (wealth == "温饱家庭（总资产25万+）") {
             percentage *= 0.01;
+            
         } else if (wealth == "不限") {
       percentage *= 0.01;
+      
         } else if (wealth == "小康家庭（总资产50万+）") {
             percentage *= 0.03;
+            
         } else if (wealth == "中产家庭（总资产100万+）") {
             percentage *= 0.1;
+            
         } else if (wealth == "高产家庭（总资产300万+）") {
             percentage *= 0.3;
+            
         } else if (wealth == "富裕家庭（总资产600万+）") {
             percentage *= 0.5;
+            
         } else if (wealth == "高净值家庭（总资产1000万+）") {
             percentage *= 0.75;
+            
         } else if (wealth == "超高净值家庭（总资产1亿+）") {
             percentage *= 0.95;
+            
         }
   }
 
   else if (education == "985本科+") {
         if (wealth == "温饱家庭（总资产25万+）") {
             percentage *= 0.003;
+            
         } else if (wealth == "不限") {
       percentage *= 0.003;
+      
         } else if (wealth == "小康家庭（总资产50万+）") {
             percentage *= 0.003;
+            
         } else if (wealth == "中产家庭（总资产100万+）") {
             percentage *= 0.01;
+            
         } else if (wealth == "高产家庭（总资产300万+）") {
             percentage *= 0.1;
+            
         } else if (wealth == "富裕家庭（总资产600万+）") {
             percentage *= 0.3;
+            
         } else if (wealth == "高净值家庭（总资产1000万+）") {
             percentage *= 0.67;
+            
         } else if (wealth == "超高净值家庭（总资产1亿+）") {
             percentage *= 0.9;
+            
         }
   }
   else if (education == "硕士+") {
         if (wealth == "温饱家庭（总资产25万+）") {
             percentage *= 0.0067;
+            
         } else if (wealth == "不限") {
       percentage *= 0.0067;
+      
         } else if (wealth == "小康家庭（总资产50万+）") {
             percentage *= 0.0067;
+            
         } else if (wealth == "中产家庭（总资产100万+）") {
             percentage *= 0.03;
+            
         } else if (wealth == "高产家庭（总资产300万+）") {
             percentage *= 0.3;
+            
         } else if (wealth == "富裕家庭（总资产600万+）") {
             percentage *= 0.67;
+            
         } else if (wealth == "高净值家庭（总资产1000万+）") {
             percentage *= 0.9;
+            
         } else if (wealth == "超高净值家庭（总资产1亿+）") {
             percentage *= 0.98;
+            
         }
   }
   else if (education == "博士+") {
         if (wealth == "温饱家庭（总资产25万+）") {
             percentage *= 0.00057;
+            
         } else if (wealth == "不限") {
       percentage *= 0.00057;
+      
         } else if (wealth == "小康家庭（总资产50万+）") {
             percentage *= 0.00057;
+            
         } else if (wealth == "中产家庭（总资产100万+）") {
             percentage *= 0.003;
+            
         } else if (wealth == "高产家庭（总资产300万+）") {
             percentage *= 0.03;
+            
         } else if (wealth == "富裕家庭（总资产600万+）") {
             percentage *= 0.067;
+            
         } else if (wealth == "高净值家庭（总资产1000万+）") {
             percentage *= 0.1;
+            
         } else if (wealth == "超高净值家庭（总资产1亿+）") {
             percentage *= 0.1;
+            
         }
     }
 
   else {
     percentage *= education_percentage[education];
+    
   }
 }
 
@@ -172,212 +232,221 @@ else if (education == "大专+") {
     if (wealth == "不限") {
                if (looks == "9分+（倾国倾城）") {
                 percentage *= 1;
+                
             } 
             else if(looks == "8.5分+（顶尖明星）") {
                 percentage *= 1;
+                
             } 
             else if(looks == "8分+（颜值明星）") {
                 percentage *= 1;
+                
             } 
             else if(looks == "7.5分+（颜值网红）") {
                 percentage *= 1;
+                
             } 
             else if(looks == "7分+（校花校草）") {
                 percentage *= 1;
+                
             } 
             else if(looks == "6.5分+（班花班草）") {
                 percentage *= 1;
+                
             } 
             else if(looks == "6分+（小美小帅）") {
                 percentage *= 1;
+                
             } 
             else {
                 percentage *= 0.95;
+                
             }
         } else if (wealth == "温饱家庭（总资产25万+）") {
             if (looks == "9分+（倾国倾城）") {
                 percentage *= 1;
+                
             } 
             else if(looks == "8.5分+（顶尖明星）") {
-                percentage *= 1;
+                percentage *= 1; 
             } 
             else if(looks == "8分+（颜值明星）") {
-                percentage *= 1;
+                percentage *= 1; 
             } 
             else if(looks == "7.5分+（颜值网红）") {
-                percentage *= 1;
+                percentage *= 1; 
             } 
             else if(looks == "7分+（校花校草）") {
-                percentage *= 1;
+                percentage *= 1; 
             } 
             else if(looks == "6.5分+（班花班草）") {
-                percentage *= 1;
+                percentage *= 1; 
             } 
             else if(looks == "6分+（小美小帅）") {
-                percentage *= 1;
+                percentage *= 1; 
             } 
             else {
-                percentage *= 0.95;
+                percentage *= 0.95; 
             }
         } else if (wealth == "小康家庭（总资产50万+）") {
             if (looks == "9分+（倾国倾城）") {
-                percentage *= 1;
+                percentage *= 1; 
             } 
             else if(looks == "8.5分+（顶尖明星）") {
-                percentage *= 1;
+                percentage *= 1; 
             } 
             else if(looks == "8分+（颜值明星）") {
-                percentage *= 1;
+                percentage *= 1; 
             } 
             else if(looks == "7.5分+（颜值网红）") {
-                percentage *= 1;
+                percentage *= 1; 
             } 
             else if(looks == "7分+（校花校草）") {
-                percentage *= 1;
+                percentage *= 1; 
             } 
             else if(looks == "6.5分+（班花班草）") {
-                percentage *= 1;
+                percentage *= 1; 
             } 
             else if(looks == "6分+（小美小帅）") {
-                percentage *= 1;
+                percentage *= 1; 
             } 
             else {
-                percentage *= 0.98;
+                percentage *= 0.98; 
             }
         } else if (wealth == "中产家庭（总资产100万+）") {
-            percentage *= 1;
+            percentage *= 1; 
         } else if (wealth == "高产家庭（总资产300万+）") {
-            percentage *= 1;
+            percentage *= 1; 
         } else if (wealth == "富裕家庭（总资产600万+）") {
-            percentage *= 1;
+            percentage *= 1; 
         } else if (wealth == "高净值家庭（总资产1000万+）") {
-            percentage *= 1;
+            percentage *= 1; 
         } else if (wealth == "超高净值家庭（总资产1亿+）") {
-            percentage *= 1;
+            percentage *= 1; 
         }
     } 
     else if (height == "男165+，女152+") {
     if (wealth == "不限") {
              if (looks == "9分+（倾国倾城）") {
-                percentage *= 1;
+                percentage *= 1; 
             } 
             else if(looks == "8.5分+（顶尖明星）") {
-                percentage *= 1;
+                percentage *= 1; 
             } 
             else if(looks == "8分+（颜值明星）") {
-                percentage *= 1;
+                percentage *= 1; 
             } 
             else if(looks == "7.5分+（颜值网红）") {
-                percentage *= 0.98;
+                percentage *= 0.98; 
             } 
             else if(looks == "7分+（校花校草）") {
-                percentage *= 0.98;
+                percentage *= 0.98; 
             } 
             else if(looks == "6.5分+（班花班草）") {
-                percentage *= 0.95;
+                percentage *= 0.95; 
             } 
             else if(looks == "6分+（小美小帅）") {
-                percentage *= 0.9;
+                percentage *= 0.9; 
             } 
             else {
-                percentage *= 0.85;
+                percentage *= 0.85; 
             }
         } else if (wealth == "温饱家庭（总资产25万+）") {
             if (looks == "9分+（倾国倾城）") {
-                percentage *= 1;
+                percentage *= 1; 
             } 
             else if(looks == "8.5分+（顶尖明星）") {
-                percentage *= 1;
+                percentage *= 1; 
             } 
             else if(looks == "8分+（颜值明星）") {
-                percentage *= 1;
+                percentage *= 1; 
             } 
             else if(looks == "7.5分+（颜值网红）") {
-                percentage *= 0.98;
+                percentage *= 0.98; 
             } 
             else if(looks == "7分+（校花校草）") {
-                percentage *= 0.98;
+                percentage *= 0.98; 
             } 
             else if(looks == "6.5分+（班花班草）") {
-                percentage *= 0.95;
+                percentage *= 0.95; 
             } 
             else if(looks == "6分+（小美小帅）") {
-                percentage *= 0.9;
+                percentage *= 0.9; 
             } 
             else {
-                percentage *= 0.85;
+                percentage *= 0.85; 
             }
         } else if (wealth == "小康家庭（总资产50万+）") {
             if (looks == "9分+（倾国倾城）") {
-                percentage *= 1;
+                percentage *= 1; 
             } 
             else if(looks == "8.5分+（顶尖明星）") {
-                percentage *= 1;
+                percentage *= 1; 
             } 
             else if(looks == "8分+（颜值明星）") {
-                percentage *= 1;
+                percentage *= 1; 
             } 
             else if(looks == "7.5分+（颜值网红）") {
-                percentage *= 0.98;
+                percentage *= 0.98; 
             } 
             else if(looks == "7分+（校花校草）") {
-                percentage *= 0.98;
+                percentage *= 0.98; 
             } 
             else if(looks == "6.5分+（班花班草）") {
-                percentage *= 0.95;
+                percentage *= 0.95; 
             } 
             else if(looks == "6分+（小美小帅）") {
-                percentage *= 0.92;
+                percentage *= 0.92; 
             } 
             else {
-                percentage *= 0.9;
+                percentage *= 0.9; 
             }
         } else if (wealth == "中产家庭（总资产100万+）") {
             if (looks == "9分+（倾国倾城）") {
-                percentage *= 1;
+                percentage *= 1; 
             } 
             else if(looks == "8.5分+（顶尖明星）") {
-                percentage *= 1;
+                percentage *= 1; 
             } 
             else if(looks == "8分+（颜值明星）") {
-                percentage *= 1;
+                percentage *= 1; 
             } 
             else if(looks == "7.5分+（颜值网红）") {
-                percentage *= 1;
+                percentage *= 1; 
             } 
             else if(looks == "7分+（校花校草）") {
-                percentage *= 1;
+                percentage *= 1; 
             } 
             else if(looks == "6.5分+（班花班草）") {
-                percentage *= 1;
+                percentage *= 1; 
             } 
             else if(looks == "6分+（小美小帅）") {
-                percentage *= 0.98;
+                percentage *= 0.98; 
             } 
             else {
-                percentage *= 0.95;
+                percentage *= 0.95; 
             }
         } else if (wealth == "高产家庭（总资产300万+）") {
             if (looks == "9分+（倾国倾城）") {
-                percentage *= 1;
+                percentage *= 1; 
             } 
             else if(looks== "8.5分+（顶尖明星）") {
-                percentage *= 1;
+                percentage *= 1; 
             } 
             else if(looks == "8分+（颜值明星）") {
-                percentage *= 1;
+                percentage *= 1; 
             } 
             else if(looks == "7.5分+（颜值网红）") {
-                percentage *= 1;
+                percentage *= 1; 
             } 
             else if(looks == "7分+（校花校草）") {
-                percentage *= 1;
+                percentage *= 1; 
             } 
             else if(looks == "6.5分+（班花班草）") {
-                percentage *= 1;
+                percentage *= 1; 
             } 
             else if(looks == "6分+（小美小帅）") {
-                percentage *= 0.98;
+                percentage *= 0.98; 
             } 
             else {
                 percentage *= 0.95;
@@ -2112,6 +2181,12 @@ if ((1-percentage) * 100 >= 99.99999) {
   result.innerHTML = "当前条件下的人群占比为：" + (percentage * 100) + "%，<br>有" + ((1-percentage) * 100) + "% 的人至少有1项不如你，<br>每一项都不下于你的人全国大约有："+ Math.round(percentage * 1412000000).toLocaleString() + "个";
 }
 
+var rewardButton = document.getElementById("reward-button");
+			if (wealth == "超高净值家庭（总资产1亿+）" && income == "30000+") {
+				rewardButton.style.display = "inline-block";
+			} else {
+				rewardButton.style.display = "none";
+			}
 
 		}
 		
@@ -2193,10 +2268,28 @@ if ((1-percentage) * 100 >= 99.99999) {
         @media screen and (max-width: 600px) {
   body {
     font-size: 16px;
-  }
+  } 
 }
-
      </style>
+     <style>
+        label {
+        display: inline-block;
+        margin-bottom: 5px;
+        }
+        select {
+		margin-bottom: 10px;
+	}
+	
+	button {
+		margin-top: 10px;
+	}
+	
+	#reward-button {
+		display: none;
+		margin-top: 10px;
+	}
+</style>
+     
 </head>
 <body>
 	<h1>人群占比计算器</h1>
@@ -2207,6 +2300,7 @@ if ((1-percentage) * 100 >= 99.99999) {
       <p>身高、颜值、资产、学历和月收入之间的比例重叠关系已计入考虑，并非简单相乘;</p>
       <p>参考数据：第七次人口普查、北师大中国收入分配研究院、中国居民营养与慢性病状况报告</p>
     </div>
+
     
 
 	<p>
@@ -2241,21 +2335,21 @@ if ((1-percentage) * 100 >= 99.99999) {
 	
 	<p>
 		<label for="wealth">家庭资产：</label>
-		<select id="wealth">
+		<select id="wealth" onchange="checkConditions()">
             <option value="不限" selected>不限</option>
-            <option>温饱家庭（总资产25万+）</option>
-            <option>小康家庭（总资产50万+）</option>
-			<option>中产家庭（总资产100万+）</option>
-			<option>高产家庭（总资产300万+）</option>
-			<option>富裕家庭（总资产600万+）</option>
-            <option>高净值家庭（总资产1000万+）</option>
-            <option>超高净值家庭（总资产1亿+）</option>
+            <option value="温饱家庭（总资产25万+）">温饱家庭（总资产25万+）</option>
+            <option value="小康家庭（总资产50万+）">小康家庭（总资产50万+）</option>
+			<option value="中产家庭（总资产100万+）">中产家庭（总资产100万+）</option>
+			<option value="高产家庭（总资产300万+）">高产家庭（总资产300万+）</option>
+			<option value="富裕家庭（总资产600万+）">富裕家庭（总资产600万+）</option>
+            <option value="高净值家庭（总资产1000万+）">高净值家庭（总资产1000万+）</option>
+            <option value="超高净值家庭（总资产1亿+）">超高净值家庭（总资产1亿+）</option>
 		</select>
 	</p>
 	
 	<p>
 		<label for="education">学历：</label>
-		<select id="education">
+		<select id="education" >
             <option value="不限" selected>不限</option>
             <option>初中+</option>
 			<option>高中/中专+</option>
@@ -2270,19 +2364,25 @@ if ((1-percentage) * 100 >= 99.99999) {
 	
 	<p>
 		<label for="income">月收入：</label>
-		<select id="income">
+		<select id="income" onchange="checkConditions()">
             <option value="不限" selected>不限</option>
-			<option>3000+</option>
-			<option>5000+</option>
-            <option>8000+</option>
-			<option>10000+</option>
-			<option>20000+</option>
-            <option>30000+</option>
+			<option value="3000+">3000+</option>
+			<option value="5000+">5000+</option>
+            <option value="8000+">8000+</option>
+			<option value="10000+">10000+</option>
+			<option value="20000+">20000+</option>
+            <option value="30000+">30000+</option>
 		</select>
 	</p>
 	
 	<p>
-		<button type="button" onclick="calculate()">查看结果</button>
+        <button type="button" id="calculate_button" onclick="calculate()">查看结果</button>
+        <div id="result"></div>
+
+        <a href="https://afdian.net/a/LifeRestart" id="reward-button" target="_blank">真这么富嘛？V我50</a>
+
+        
+
 	</p>
 	
 	<p id="result"></p>
