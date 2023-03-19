@@ -2166,19 +2166,19 @@ nationalPercentageText = nationalPercentageNumber.toString();
 
 if ((1-percentage) * 100 >= 99.99999) {
   result.style.color = "red";
-  result.innerHTML = "【天选】<br>当前条件下的人群占比为：" + (percentage * 100) + "%，<br>有" + ((1-percentage) * 100) + "% 的人至少有1项不如你，<br>每一项都不下于你的人全国大约有："+ Math.round(percentage * 1412000000).toLocaleString() + "个";
+  result.innerHTML = "【天选】<br>当前条件下的人群占比为：" + (percentage * 100) + "%，<br>有" + ((1-percentage) * 100) + "% 的人至少有1项不如你，<br>每一项都比你更强的人全国大约有："+ Math.round(percentage * 1412000000).toLocaleString() + "个";
 } else if ((1-percentage) * 100 >= 99.999) {
   result.style.color = "orange";
-  result.innerHTML = "【传说】<br>当前条件下的人群占比为：" + (percentage * 100) + "%，<br>有" + ((1-percentage) * 100) + "% 的人至少有1项不如你，<br>每一项都不下于你的人全国大约有："+ Math.round(percentage * 1412000000).toLocaleString() + "个";
+  result.innerHTML = "【传说】<br>当前条件下的人群占比为：" + (percentage * 100) + "%，<br>有" + ((1-percentage) * 100) + "% 的人至少有1项不如你，<br>每一项都比你更强的人全国大约有："+ Math.round(percentage * 1412000000).toLocaleString() + "个";
 } else if ((1-percentage) * 100 >= 99.9) {
   result.style.color = "purple";
-  result.innerHTML = "【罕见】<br>当前条件下的人群占比为：" + (percentage * 100) + "%，<br>有" + ((1-percentage) * 100) + "% 的人至少有1项不如你，<br>每一项都不下于你的人全国大约有："+ Math.round(percentage * 1412000000).toLocaleString() + "个";
+  result.innerHTML = "【罕见】<br>当前条件下的人群占比为：" + (percentage * 100) + "%，<br>有" + ((1-percentage) * 100) + "% 的人至少有1项不如你，<br>每一项都比你更强的人全国大约有："+ Math.round(percentage * 1412000000).toLocaleString() + "个";
 } else if ((1-percentage) * 100 >= 99) {
   result.style.color = "deepskyblue";
-  result.innerHTML = "【优秀】<br>当前条件下的人群占比为：" + (percentage * 100) + "%，<br>有" + ((1-percentage) * 100) + "% 的人至少有1项不如你，<br>每一项都不下于你的人全国大约有："+ Math.round(percentage * 1412000000).toLocaleString() + "个";
+  result.innerHTML = "【优秀】<br>当前条件下的人群占比为：" + (percentage * 100) + "%，<br>有" + ((1-percentage) * 100) + "% 的人至少有1项不如你，<br>每一项都比你更强的人全国大约有："+ Math.round(percentage * 1412000000).toLocaleString() + "个";
 } else {
   result.style.color = "black";
-  result.innerHTML = "当前条件下的人群占比为：" + (percentage * 100) + "%，<br>有" + ((1-percentage) * 100) + "% 的人至少有1项不如你，<br>每一项都不下于你的人全国大约有："+ Math.round(percentage * 1412000000).toLocaleString() + "个";
+  result.innerHTML = "当前条件下的人群占比为：" + (percentage * 100) + "%，<br>有" + ((1-percentage) * 100) + "% 的人至少有1项不如你，<br>每一项都比你更强的人全国大约有："+ Math.round(percentage * 1412000000).toLocaleString() + "个";
 }
 
 var rewardButton = document.getElementById("reward-button");
